@@ -55,6 +55,56 @@ console.log(obj.two())
 
  /**
   * Functions are first class citizens in JS
+  * functions can be assign to varible and object properties
   */
 
+  //var stuff = fuction(){}
+
+//   function a(fn){
+//       fn()
+//   }
+//   a(function(){console.log('hi there')}) //pass a function as parameter to a function
+
+/**
+ * return function as a value in javascript
+ */
+
+//  function b(){
+//      return function c(){
+//          console.log('bye')
+//      }
+//  }
+
+// //  console.log(b()())
+
+// var d = b();
+//  console.log(d())
+
+/**
+ * don't initialize a function inside the loop
+ */
+
+//  for(let i = 0; i< 5; i++){ //don't do that
+//      function a(){
+
+//      }
+//      a()
+//  }
+
+// function a(){
+
+// }
+//  for(let i = 0; i< 5; i++){ //do this
+    
+//      a()
+//  }
+
+/**
+ * set the default parameter to function
+ */
+
+ function a(param =6){
+     return param
+ }
+ console.log(a())
    
