@@ -19,7 +19,7 @@
 /**
  * create a pure function without side effects
  */
-
+/*
  const array = [1,2,3]
  function removeLastItem(arr){
      const newArray = [].concat(arr);
@@ -38,7 +38,7 @@
  /**
   * same input give same output
   */
-
+/*
   function a(){
       console.log('hi')
   }
@@ -81,7 +81,42 @@
      purchases:[]
  }
 
+ let amazonHistory = []
+ const compose = (f,g) => (...args) => f(g(...args));
 
+console.log(purchasesItem(
+     emptyCart,
+     buyItem,
+     applyTaxToItems,
+     additemToCart,
+ )(user, {name:'laptop',price:200}))
+
+ function purchasesItem(...fns){
+     return fns.reduce(compose)
+ }
+
+
+function additemToCart(user, item){
+    const updateCart = user.cart.concat(item)
+    return Object.assign({},user,{cart:updateCart})
+}
+function applyTaxToItems(user){
+    const {cart} = user;
+    const taxRate = 1.3;
+    const updatedCart = cart.map(item => {
+        return {
+            name:item.name,
+            price:item.price*taxRate
+        }
+    })
+    return Object.assign({},user, {cart:updatedCart})
+}
+function buyItem(user){
+    return Object.assign({},user,{purchases:user.cart})
+}
+function emptyCart(user){
+    return Object.assign({},user,{cart:[]})
+}
 
 /**
  * Implement a cart featrue:
