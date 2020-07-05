@@ -185,3 +185,7 @@ lizard.__proto__ = dragon
       return arr;
   }
  console.log([1,2,4].map())
+
+ /**
+  * scheme + java
+  */
