@@ -9,9 +9,9 @@
 
 
 
-fn1(fn2(fn3(50)));
-compose(fn1,fn2,fn3)(50)
-pipe(fn3,fn2,fn1)(50)
+// fn1(fn2(fn3(50)));
+// compose(fn1,fn2,fn3)(50)
+// pipe(fn3,fn2,fn1)(50)
 //  data --> fn --> data --> fn --->
  
 const compose = (f, g) => (data) => f(g(data))
