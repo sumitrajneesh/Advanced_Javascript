@@ -5,7 +5,16 @@
  * push O(1)
  * insert O(n)
  * delete O(n)
+ * 
  */
+
+ /**
+  * array if fast to lookup
+  * arrary is fast to  push/pop
+  * slow inserts
+  * slows deletes
+  * fixed size problem
+  */
 
  /*
  const strings = ['a','b','c','d'];  
