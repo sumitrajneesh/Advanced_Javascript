@@ -41,7 +41,7 @@
  /**
   * create facebook
   */
-
+/*
   var database =[
       {
           username:"sumit",
@@ -89,7 +89,7 @@
     //   }
   
 
-  signIn(userNamePromt,passwordPromt)
+//   signIn(userNamePromt,passwordPromt)
 
   /**
    * function declaration
