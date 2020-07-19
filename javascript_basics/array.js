@@ -33,7 +33,7 @@
    * list.concat(['bee','deer']) //it create new array
    * list.sort()
    */
-  var myarray=[25, 8, 7, 41]
-const sortArray = myarray.sort( function(a,b) { return a - b; } );
+//   var myarray=[25, 8, 7, 41]
+// const sortArray = myarray.sort( function(a,b) { return a - b; } );
 
-console.log(sortArray)
+// console.log(sortArray)
