@@ -86,15 +86,35 @@
  */
 
 
- function logAtLeast5(n){
-     for(var i = 1; i < Math.max(5,n);i++){
-         console.log(i)
-     }
- }
+//  function logAtLeast5(n){
+//      for(var i = 1; i < Math.max(5,n);i++){
+//          console.log(i)
+//      }
+//  }
 
 
- function logAtMost5(n){
-     for(var i = 1; i<= Math.min(5,n); i++){
-         console.log(i)
-     }
- }
+//  function logAtMost5(n){
+//      for(var i = 1; i<= Math.min(5,n); i++){
+//          console.log(i)
+//      }
+//  }
+
+/**space complexity */
+
+// function sum(arr){
+//     let total = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         total += arr[i]
+//     }
+
+//     return total
+// }
+
+
+// function double(arr){
+//     let newArr = [];
+//     for(let i = 0; i < arr.length; i++){
+//         newArr.push(2 * arr[i])
+//     }
+//     return newArr;
+// }
