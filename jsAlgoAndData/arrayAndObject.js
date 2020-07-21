@@ -44,3 +44,18 @@
      * searching - O(n)
      * access - O(1)
      */
+
+     /**
+      * Built in array method
+      * push -O(1)
+      * pop -O(1)
+      * shift -O(n)
+      * unshift -O(n)
+      * concat -O(n)
+      * slice -O(n)
+      * splice -O(n)
+      * sort -O(n*longn)
+      * forEach/map/filter/reduce -O(n)
+      */
+
+    
