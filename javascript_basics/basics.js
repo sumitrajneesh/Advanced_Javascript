@@ -90,6 +90,7 @@
     //        return a*b;
     //    }
     //  }
+    // console.log(multiply(5,40))
    var s =   function multiply(a,b){
        if(a > 10 || b > 10){
            return "that's too hard";
@@ -98,5 +99,4 @@
        }
      }
 
-     console.log(multiply(5,40))
      console.log(s(5,40))
