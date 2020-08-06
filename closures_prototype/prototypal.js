@@ -176,16 +176,24 @@ lizard.__proto__ = dragon
   * 
   */
 
-  Array.prototype.map = function(){
-      let arr = [];
-      for(let i = 0; i < this.length; i++){
-          arr.push((this[i] + 'map'))
-      }
+//   Array.prototype.map = function(){
+//       let arr = [];
+//       for(let i = 0; i < this.length; i++){
+//           arr.push((this[i] + 'map'))
+//       }
 
-      return arr;
-  }
- console.log([1,2,4].map())
+//       return arr;
+//   }
+//  console.log([1,2,4].map())
+
 
  /**
   * scheme + java
   */
+
+  var array = [1,2,3,4,5]
+  for(let i = 0; i<array.length; i++){
+      setTimeout(() =>{
+          console.log(i, array[i])
+      },1000)
+  }
