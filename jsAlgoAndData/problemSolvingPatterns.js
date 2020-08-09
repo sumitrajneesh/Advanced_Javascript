@@ -24,19 +24,32 @@
    * same([1,2,1] , [4,4,1]) false (must be same frequency)
    */
 
-   function same(arr1, arr2){
-       if(arra1.length !== arr2.length){
-           return false
-       }
+//    function same(arr1, arr2){
+//        if(arra1.length !== arr2.length){
+//            return false
+//        }
 
-       for(let i = 0; i < arr1.length; i++){
-           let correctIndex = arr2.indexOf(arr1[i] ** 2)
-           if(correctIndex === -1){
-               return false;
+//        for(let i = 0; i < arr1.length; i++){
+//            let correctIndex = arr2.indexOf(arr1[i] ** 2)
+//            if(correctIndex === -1){
+//                return false;
             
-           }
-           arr2.splice(correctIndex,1)
-       }
+//            }
+//            arr2.splice(correctIndex,1)
+//        }
 
-       return true  
-   }
+//        return true  
+//    }
+
+   /**
+    * Sliding Window approch
+    * This patteren involves creating a window which can either be an array or number from one position to another
+    * Depending on a certin condition , the window either increase or close(and a new window is created)
+    * very useful for keeping trach of a subset of data in an array/string etc.
+    */
+
+    /**
+     * Questions 
+     * Write a function called maxSubarraySum which accepts an array of integers and number called n. the function should calculate the maximum sum of n consecutive elements
+     * in the array
+     */
